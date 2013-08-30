@@ -1,0 +1,241 @@
+/*global start reset*/
+body {
+	margin:0;
+	padding:0;
+	font-size:14px;
+	font-family:"Microsoft YaHei";
+}
+ul, ol, li {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+p, input, textarea, button,table, tr, th, td, thead, tbody ,pre{
+	padding:0;
+	margin:0;
+	font-family:"Microsoft YaHei";
+}
+h1, h2, h3, h4, h5, blockquote, dl, dt, dd {
+	margin:0;
+	padding:0;
+	font-weight:normal;
+}
+em, cite, i{font-style:normal;}
+img{border:none;}
+a {
+	text-decoration:none;
+	color:#666;
+}
+a:hover{color:#007ad5;}
+.clr {
+	clear:both;
+}
+.fixedbox {
+	width:1200px;
+	margin:0 auto;
+}
+.noboder{border:0 !important;}
+.nomargin{margin:0 !important;}
+
+#newcomment{
+	height:45px;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	background:url(../images/bg.png);
+	
+	>.inset{
+		width:990px;
+		position:relative;
+		margin:0 auto;
+		
+		.hot{
+			width:136px;
+			height:45px;
+			background:url(../images/split.png) right center no-repeat;
+			position:absolute;
+			left:0;
+			top:0;
+			>.inset{
+				height:45px;
+				width:136px;
+				background:url(../images/hot.png) left center no-repeat;
+			}
+		}
+		.hot_comment{
+			width:680px;
+			height:45px;
+			position:absolute;
+			left:136px;
+			top:0;
+			line-height:45px;
+			color:#fff;
+			text-indent:28px;
+			background:url(../images/arrow.png) left center no-repeat;
+		}
+		.btn_reply{
+			position:absolute;
+			right:0;
+			top:0;
+			width:150px;
+			height:45px;
+			background:url(../images/btn_words.png);
+			cursor:pointer;
+		}
+		
+		.new_reply{
+			position:absolute;
+			width:340px;
+			height:268px;
+			border:1px solid #32363e;
+			background:url(../images/bg.png);
+			top:-284px;
+			right:0;
+			
+			.header{
+				height:45px;
+				color:#adb0b3;
+				text-indent:1em;
+				line-height:45px;
+				a{
+					color:#febf00;
+				}
+			}
+			
+			.content{
+				width:321px;
+				height:108px;
+				border:1px solid #47505f;
+				margin:0 auto;
+				background:#e7eaed;
+				textarea{
+					width:100%;
+					height:100%;
+					background:none;
+					border:none;
+				}
+			}
+			
+			.row_btn{
+				width:321px;
+				margin:0 auto;
+				text-align:right;
+				padding-top:15px;
+				padding-bottom:6px;
+				button{
+					width:88px;
+					height:36px;
+					background:url(../images/btn_comment.png);
+					border:none;
+				}
+			}
+			
+			.note{
+				width:327px;
+				height:43px;
+				padding:4px;
+				margin:0 auto;
+				background:#5d636d;
+				color:#bec2c6;
+				font-size:12px;
+				line-height:20px;
+			}
+			
+			i.conner{
+				display:block;
+				width:15px;
+				height:15px;
+				background:url(../images/conner.png);
+				position:absolute;
+				bottom:-14px;
+				right:20px;
+			}
+		}
+		
+		.comment_d{
+			position:absolute;
+			width:797px;
+			border:1px solid #32363e;
+			background:url(../images/bg.png);
+			bottom:25px;
+			left:0;
+			padding:20px;
+			
+			.username{
+				color:#febf00;
+				width:80px;
+				float:left;
+			}
+			
+			.details{
+				margin-left:80px;
+				.content{
+					color:#d1d1d1;
+				}
+				
+				.cite{
+					padding:10px 0;
+					overflow:hidden;
+					color:#949494;
+					a{
+						color:#949494;
+						cursor:pointer;
+						&:hover{
+							color:#febf00;
+						}
+					}
+					.time{
+						float:left;
+						
+						font-size:12px;
+					}
+					
+					.nav{
+						float:right;
+						.reply{
+							color:#febf00;
+						}
+						
+						.prev{
+							background:url(../images/arrow-l.png) left center no-repeat;
+							padding-left:18px;
+							line-height:20px;
+							&:hover{
+								background:url(../images/arrow-l-h.png) left center no-repeat;
+							}
+						}
+						
+						.next{
+							background:url(../images/arrow-r.png) right center no-repeat;
+							padding-right:18px;
+							line-height:20px;
+							&:hover{
+								background:url(../images/arrow-r-h.png) right center no-repeat;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#floathelp{
+	width:60px;
+	height:122px;
+	position:fixed;
+	left:50%;
+	bottom:50px;
+	margin-left:500px;
+	
+	.more{
+		width:60px;
+		height:60px;
+		background:url(../images/btn_more.png);
+	}
+	.gotop{
+		width:60px;
+		height:60px;
+		background:url(../images/gotop.png);
+	}
+}
